@@ -1,3 +1,5 @@
+streamlit
 Pillow
 requests
-huggingface_hub
+torch
+torchvision
