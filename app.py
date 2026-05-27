@@ -23,7 +23,7 @@ st.sidebar.markdown("---")
 
 # User apni API key yahan daal sakta hai ya aap code me permanent likh sakte hain
 # ✅ Apni asli key yahan paste kar dein:
-api_key = "AIzaSyA_Aapki_Asli_Copy_Ki_Hui_Key"
+api_key = "AIzaSyB_sEro3KNDnr1vmBtvaSdomVLI7SYykA0"
 st.sidebar.markdown("---")
 st.sidebar.info("**Developer:** Tanuja Sharma\n\n**Engine:** Google Gemini Pro Vision\n\n**Capability:** Identifies 1 Million+ Plants")
 
