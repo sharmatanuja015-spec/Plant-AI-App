@@ -61,7 +61,7 @@ if uploaded_file is not None:
             with st.spinner("Analyzing leaf morphology, venation patterns, and botanical features..."):
                 try:
                     # Initialize Gemini Pro Vision Model
-                    model = genai.GenerativeModel('gemini-1.5-flash')
+                    model = genai.GenerativeModel('gemini-2.5-flash')
                     
                     # AI Core Prompt
                     prompt = """
