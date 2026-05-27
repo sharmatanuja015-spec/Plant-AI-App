@@ -47,7 +47,7 @@ st.sidebar.info("**Name:** Tanuja Sharma\n\n**System Status:** 🟢 Local Neural
 st.markdown("<h1 class='main-title'>🌿 Universal AI Plant Identifier</h1>", unsafe_allow_html=True)
 st.markdown("<p class='sub-title'>Advanced Botanical Recognition & Structural Feature Mapping</p>", unsafe_allow_html=True)
 
-# 5. Dynamic Metric Cards Dashboard
+# 5. Dynamic Metric Cards Dashboard (Fixed Syntax)
 col_a, col_b, col_c = st.columns(3)
 with col_a:
     st.markdown("<div class='stat-card'><div class='stat-num'>99.42%</div><div class='stat-label'>AI Model Accuracy</div></div>", unsafe_allow_html=True)
@@ -56,4 +56,52 @@ with col_b:
 with col_c:
     st.markdown(f"<div class='stat-card'><div class='stat-num'>{confidence_threshold}%</div><div class='stat-label'>User Conf. Filter</div></div>", unsafe_allow_html=True)
 
-st.markdown("<br>",
+st.markdown("<br>", unsafe_allow_html=True)
+
+# 6. Comprehensive Local Botanical Dataset
+PLANT_DATABASE = {
+    'tulsi': {
+        'name': 'Tulsi (Holy Basil / Ocimum tenuiflorum)', 'type': 'Medicinal Herb',
+        'uses': 'Boosts immunity, cures cough & cold, reduces stress, and acts as an excellent respiratory relief.',
+        'fact': 'In India, it is considered a sacred plant and is widely grown for its continuous oxygen-emitting property.',
+        'properties': ['Antiviral', 'Immunity Booster', 'Anti-inflammatory'],
+        'soil': 'Rich loamy soil with constant sunlight.'
+    },
+    'neem': {
+        'name': 'Neem (Margosa / Azadirachta indica)', 'type': 'Medicinal Tree',
+        'uses': 'Purifies blood, treats acne & skin infections, acts as a natural organic pesticide, and promotes dental hygiene.',
+        'fact': 'Every single part of the Neem tree (leaves, bark, twigs, seeds) holds highly potent medicinal properties.',
+        'properties': ['Antibacterial', 'Blood Purifier', 'Antifungal'],
+        'soil': 'Well-drained sandy soil, highly drought-resistant.'
+    },
+    'money': {
+        'name': 'Money Plant (Epipremnum aureum)', 'type': 'Indoor / Ornamental Vine',
+        'uses': 'Acts as an efficient indoor air purifier by removing toxins like benzene & formaldehyde, and boosts positive ambience.',
+        'fact': 'It is incredibly resilient; it can grow easily in a simple glass of water without any soil or heavy sunlight.',
+        'properties': ['Air Purification', 'VOC Filter', 'Low Maintenance'],
+        'soil': 'Can grow directly in clean water or nutrient-rich potting soil.'
+    },
+    'aloe': {
+        'name': 'Aloe Vera', 'type': 'Succulent / Medicinal',
+        'uses': 'Deeply hydrates skin, heals burns and wounds, improves digestion, and strengthens hair root matrix.',
+        'fact': 'Aloe vera consists of 99% water, yet it thrives and survives flawlessly in extremely arid desert climates.',
+        'properties': ['Skin Hydration', 'Burn Healing', 'Digestive Aid'],
+        'soil': 'Dry, sandy, well-drained cactus soil-mix.'
+    },
+    'rose': {
+        'name': 'Rose (Gulab)', 'type': 'Flowering Shrub',
+        'uses': 'Used in skincare (Rose water), aromatherapy for relaxation, and has mild anti-inflammatory benefits.',
+        'fact': 'Fossil evidence shows that roses have existed for over 35 million years.',
+        'properties': ['Aromatherapy', 'Skin Toning', 'Antioxidant'],
+        'soil': 'Rich, organic, well-aerated soil with regular hydration.'
+    },
+    'mint': {
+        'name': 'Mint (Pudina)', 'type': 'Aromatic Herb',
+        'uses': 'Aids in digestion, provides instant freshness, cures nausea, and helps relieve headaches.',
+        'fact': 'Mint contains menthol, which triggers cold-sensitive receptors in the skin.',
+        'properties': ['Digestive Support', 'Cooling Agent', 'Nausea Relief'],
+        'soil': 'Moist, fertile soil with partial to full shade.'
+    },
+    'hibiscus': {
+        'name': 'Hibiscus (Gudhal)', 'type': 'Medicinal Flower',
+        'uses': 'Promotes hair growth, lowers blood pressure, rich in Vitamin C, and boosts liver health.',
